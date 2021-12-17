@@ -25,8 +25,29 @@ The data collected from the players that could be obtained were the following:<b
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
 
 ## Cleaning the data
-The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player.<br />
+The data was cleaned by correcting the 'PLAYER' column to obtain, first, the position of each player.<br />
 ```python
 df['PLAYER'] = df['PLAYER'].str.rstrip('âââ')
 ```
-Then, from the same column 'PLAYER', the position of each player was obtained.
+```python
+#Get the positions of the players from the 'PLAYER' column
+def unique(sequence):
+    seen = set()
+    return [x for x in sequence if not (x in seen or seen.add(x))]
+posit=[]
+for i in df['PLAYER']:
+    m = unique(re.findall('[A-Z][^A-Z]*', i))
+    if 'X' in m[-1]:
+        posit.append('X')
+    elif 'C' in m[-1]:
+        posit.append('C')
+    elif 'P' in m[-1]:
+        posit.append('P')
+    else:
+        m = m[-2][-1]+m[-1][0]
+        posit.append(m)
+```
+To later create the column called 'POSITION' with the extracted data.<br />
+```python
+df.loc[:,'POSITION'] = posit
+```
