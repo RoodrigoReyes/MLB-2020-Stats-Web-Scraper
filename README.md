@@ -68,3 +68,8 @@ for i in range(len(df)):
     else:
         df['PLAYER'][i] = str(m[0]+" "+m[2])
 ```
+I save the player's data in a file called 'mlb_players_data.xlsx', where later it will be possible to make graphics either in Power BI or Tablue for further analysis.
+```python
+#Saving the data in a new file in xlsx format. called: 'mlb_players_data.xlsx'
+df.to_excel('mlb_players_data.xlsx',index=False)
+```
