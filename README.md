@@ -25,4 +25,8 @@ The data collected from the players that could be obtained were the following:<b
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
 
 ## Cleaning the data
-The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player.<br />Then, from the same column 'PLAYER', the position of each player was obtained.
+The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player.<br />
+```python
+df['PLAYER'] = df['PLAYER'].str.rstrip('âââ')
+```
+Then, from the same column 'PLAYER', the position of each player was obtained.
