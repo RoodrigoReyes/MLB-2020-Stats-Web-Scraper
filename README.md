@@ -47,7 +47,7 @@ for i in df['PLAYER']:
         m = m[-2][-1]+m[-1][0]
         posit.append(m)
 ```
-To later create the column called 'POSITION' with the extracted data.<br />
+To then create the column 'POSITION' with the data extracted previously.<br />
 ```python
 df.loc[:,'POSITION'] = posit
 ```
