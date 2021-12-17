@@ -3,7 +3,7 @@
 A web scraper used to get stats for the 2020 Season of the Major League Baseball. This web scraper takes advantage of the MLB web.<br />
 The data collected from the players in the 2020 season that could be obtained were the following:<br />
 ### Columns
-|Columns|Info|
+|Data|Info|
 |-------|:---|
 |Player |Player's first and last name|
 |Team |Name of the team|
