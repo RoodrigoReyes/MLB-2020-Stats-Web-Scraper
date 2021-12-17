@@ -1,14 +1,7 @@
 # MLB 2020 Stats Web Scraper
 
 A web scraper used to get stats for the 2020 Season of the Major League Baseball. This web scraper takes advantage of the MLB web.
-The data collected that could be obtained were the following:
-
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+The data collected from the players in the 2020 season that could be obtained were the following:
 
 |Columns|Info|
 |-------|:---|
@@ -30,3 +23,5 @@ The data collected that could be obtained were the following:
 |On-Base Percentage (OBP) |The rate at which a batter reached base in his place appearances. (H+BB+HBP)/(AB+BB+HBP+SF)|
 |Slugging Percentage (SLG) |The rate od total bases per at bat. (1B+2Bx2+3Bx3+HRx4)/AB|
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
+
+Se procedio a limpiar los datos, corregir las cadenas de texto con errores
