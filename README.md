@@ -24,4 +24,4 @@ The data collected from the players in the 2020 season that could be obtained we
 |Slugging Percentage (SLG) |The rate od total bases per at bat. (1B+2Bx2+3Bx3+HRx4)/AB|
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
 
-Se procedio a limpiar los datos, corregir las cadenas de texto con errores
+The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player. Then, from the same column 'PLAYER', the position of each player was obtained.
