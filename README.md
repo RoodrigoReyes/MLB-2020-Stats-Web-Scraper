@@ -51,3 +51,20 @@ To then create the column 'POSITION' with the data extracted previously.<br />
 ```python
 df.loc[:,'POSITION'] = posit
 ```
+We obtain the player's first and last name with the following for loops.
+```python
+for i in df['PLAYER']:
+    i = ''.join(filter(str.isalpha,i))
+    
+from string import printable
+for i in range(len(df)):
+    df['PLAYER'][i] = ''.join(filter(str.isalpha, df['PLAYER'][i]))
+    m = unique(re.findall('[A-Z][^A-Z]*', df['PLAYER'][i]))
+    set(m[2]).difference(printable)
+
+    if set(m[2]).difference(printable):
+        m.pop(2)
+        df['PLAYER'][i] = str(m[0]+" "+m[2])
+    else:
+        df['PLAYER'][i] = str(m[0]+" "+m[2])
+```
