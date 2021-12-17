@@ -24,6 +24,18 @@ The data collected from the players that could be obtained were the following:<b
 |Slugging Percentage (SLG) |The rate od total bases per at bat. (1B+2Bx2+3Bx3+HRx4)/AB|
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
 
+## Dependencies
+* Pandas
+* Numpy
+* Seaborn
+* Plotly_express
+* IPython
+* requests
+* lxml
+* re
+* itertools
+* warnings
+
 ## Cleaning the data
 The data was cleaned by correcting the 'PLAYER' column to obtain, first, the position of each player.<br />
 ```python
@@ -82,4 +94,4 @@ To finally save these in a file called 'mlb_teams_data.xlsx'
 #Saving the data in a new file in xlsx format. called: 'mlb_teams_data.xlsx'
 stats.to_excel('mlb_teams_data.xlsx',index=False)
 ```
-> In the file '2020 MLB Data' with extension .ipynb, you will find bar graphs by team of the different statistics of the season.
+> In the file '2020 MLB Data' with extension .ipynb, you will find bar graphs and radar graph by team of the different statistics of the season.
