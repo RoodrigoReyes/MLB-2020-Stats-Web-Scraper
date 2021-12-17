@@ -73,3 +73,12 @@ I save the player's data in a file called 'mlb_players_data.xlsx', where later i
 #Saving the data in a new file in xlsx format. called: 'mlb_players_data.xlsx'
 df.to_excel('mlb_players_data.xlsx',index=False)
 ```
+After this, I drop the 'PLAYER' and 'G' columns, in order to get the statistics only of the teams.
+```python
+stats = df.drop(columns=['PLAYER','G'])
+```
+To finally save these in a file called 'mlb_teams_data.xlsx'
+```python
+#Saving the data in a new file in xlsx format. called: 'mlb_teams_data.xlsx'
+stats.to_excel('mlb_teams_data.xlsx',index=False)
+```
