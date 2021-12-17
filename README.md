@@ -1,5 +1,5 @@
 # MLB 2020 Stats Web Scraper
-
+![alt text](https://gray-kvly-prod.cdn.arcpublishing.com/resizer/k9dD9Um3nwV3ZeRLo0AoC6dQGfc=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/APSOXLYZTFMPTOMQ6I6O3THNEU.jpg "MLB 2020 Season")
 This web scraper takes the data from each active player in the 2020 season in any position of the [MLB Web](https://www.mlb.com/stats/2020).<br />
 The data collected from the players that could be obtained were the following:<br />
 ## Columns
