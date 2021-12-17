@@ -2,7 +2,7 @@
 
 This web scraper takes the data from each active player in the 2020 season in any position of the [MLB Web](https://www.mlb.com/stats/2020).<br />
 The data collected from the players that could be obtained were the following:<br />
-### Columns
+## Columns
 |Data|Info|
 |-------|:---|
 |Player |Player's first and last name|
@@ -24,4 +24,5 @@ The data collected from the players that could be obtained were the following:<b
 |Slugging Percentage (SLG) |The rate od total bases per at bat. (1B+2Bx2+3Bx3+HRx4)/AB|
 |On-Base Plus Slugging (OPS) |The sum of on-base percentage and slugging percentage. (OBP+SLG)|
 
-The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player. Then, from the same column 'PLAYER', the position of each player was obtained.
+## Cleaning the data
+The data was cleaned, correcting the 'PLAYER' column in order to get the name and surname of each player.<br />Then, from the same column 'PLAYER', the position of each player was obtained.
