@@ -1,7 +1,9 @@
 # MLB 2020 Stats Web Scraper
 
-A web scraper used to get stats for the 2020 Season of the Major League Baseball. This web scraper takes advantage of the MLB web.<br />
-The data collected from the players in the 2020 season that could be obtained were the following:<br />
+This web scraper takes the data from each active player in the 2020 season in any position of the MLB web.
+https://www.mlb.com/stats/2020
+[MLB Stats](https://www.mlb.com/stats/2020)<br />
+The data collected from the players that could be obtained were the following:<br />
 ### Columns
 |Data|Info|
 |-------|:---|
