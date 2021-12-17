@@ -1,1 +1,2 @@
-# MLB-2020-Stats-Web-Scraping
+# MLB 2020 Stats Web Scraper
+
