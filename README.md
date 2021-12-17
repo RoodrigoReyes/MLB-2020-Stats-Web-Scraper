@@ -82,3 +82,4 @@ To finally save these in a file called 'mlb_teams_data.xlsx'
 #Saving the data in a new file in xlsx format. called: 'mlb_teams_data.xlsx'
 stats.to_excel('mlb_teams_data.xlsx',index=False)
 ```
+> In the file '2020 MLB Data' with extension .ipynb, you will find bar graphs by team of the different statistics of the season.
